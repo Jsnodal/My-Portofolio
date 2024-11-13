@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mwirigi Alex | AI & Machine Learning Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Introduce yourself here.</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
-    </section>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <h1 class="logo">Mwirigi Alex<span>AI</span></h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Mwirigi Alex, a passionate AI engineer with a drive to create autonomous systems that revolutionize industries. With a deep background in Machine Learning and Data Science, I specialize in building innovative AI solutions that solve real-world problems. Let's shape the future together.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Predictive Energy Consumption</h3>
+      <p>Leveraging temporal data to optimize energy use and cut costs for businesses.</p>
+      <button onclick="showDetails('energy')">View Details</button>
+    </div>
+    <div class="project-card">
+      <h3>Mobile Health Care</h3>
+      <p>Developing mobile health care platformwhere you can get your diagnosis for free and faster wayusing DL algorithms.</p>
+      <button onclick="showDetails('drones')">View Details</button>
+    </div>
+    <div class="project-card">
+      <h3>Insurance Charge Prediction App</h3>
+      <p>Machine learning application predicting insurance charges based on client data.</p>
+      <button onclick="showDetails('insurance')">View Details</button>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, R, SQL</li>
+      <li>Machine Learning: scikit-learn, TensorFlow, PyTorch</li>
+      <li>Deep Learning:  NLP,LLM, TensorFlow, PyTorch</li>
+      <li>Data Analysis: Pandas, Numpy, Matplotlib</li>
+      <li>Web Scraping, Data Wrangling, API</li>
+      <li>Projects:  Kaggle,Zindi,Coursera,Udemy,DataQuest,Analytic Vidthya </li>
+      <li>Certification 1:Coursera:Machine & Deep learning specialization</li>
+      <li>Certification 2: Udemy:DataScience BootCamp 2024 </li> 
+      <li>Blog Projects: Krish Naik Youtube Playlist Machine Learning End To End Project</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you’re ready to innovate, let’s connect:</p>
+    <a href="mwirigialex351@gmail.com" class="contact-button">Email Me</a>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
