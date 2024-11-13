@@ -3,74 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mwirigi Alex | AI & Machine Learning Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="SCORPION's AI Portfolio - Live Coding Experience">
+  <title>SCORPION | AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Courier Prime', monospace;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #33cc33;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    header h2 {
+      font-size: 2rem;
+      color: #66ff66;
+      letter-spacing: 1px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #2d2d2d;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3);
+    }
+    nav a {
+      color: #33cc33;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin: 0 15px;
+      padding: 10px 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #66ff66;
+    }
+    .typing-effect {
+      font-size: 1.5rem;
+      color: #33cc33;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid #33cc33;
+      width: 0;
+      animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      color: #66ff66;
+      margin-bottom: 20px;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #b0b0b0;
+      margin-bottom: 30px;
+    }
+    .projects-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .projects-list li {
+      background: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+    .projects-list li:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    }
+    .projects-list a {
+      color: #33cc33;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    footer {
+      background: #2d2d2d;
+      text-align: center;
+      color: #b0b0b0;
+      padding: 40px 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <h1 class="logo">Mwirigi Alex<span>AI</span></h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm Mwirigi Alex, a passionate AI engineer with a drive to create autonomous systems that revolutionize industries. With a deep background in Machine Learning and Data Science, I specialize in building innovative AI solutions that solve real-world problems. Let's shape the future together.
-    </p>
-  </section>
+<header>
+  <h1>SCORPION's AI Portfolio</h1>
+  <h2>Powered by Artificial Intelligence & Machine Learning</h2>
+  <div class="typing-effect">console.log("Welcome to SCORPION's Portfolio!");</div>
+</header>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Predictive Energy Consumption</h3>
-      <p>Leveraging temporal data to optimize energy use and cut costs for businesses.</p>
-      <button onclick="showDetails('energy')">View Details</button>
-    </div>
-    <div class="project-card">
-      <h3>Mobile Health Care</h3>
-      <p>Developing mobile health care platformwhere you can get your diagnosis for free and faster wayusing DL algorithms.</p>
-      <button onclick="showDetails('drones')">View Details</button>
-    </div>
-    <div class="project-card">
-      <h3>Insurance Charge Prediction App</h3>
-      <p>Machine learning application predicting insurance charges based on client data.</p>
-      <button onclick="showDetails('insurance')">View Details</button>
-    </div>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, R, SQL</li>
-      <li>Machine Learning: scikit-learn, TensorFlow, PyTorch</li>
-      <li>Deep Learning:  NLP,LLM, TensorFlow, PyTorch</li>
-      <li>Data Analysis: Pandas, Numpy, Matplotlib</li>
-      <li>Web Scraping, Data Wrangling, API</li>
-      <li>Projects:  Kaggle,Zindi,Coursera,Udemy,DataQuest,Analytic Vidthya </li>
-      <li>Certification 1:Coursera:Machine & Deep learning specialization</li>
-      <li>Certification 2: Udemy:DataScience BootCamp 2024 </li> 
-      <li>Blog Projects: Krish Naik Youtube Playlist Machine Learning End To End Project</li>
-    </ul>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi, I'm SCORPION. I build intelligent systems using the latest machine learning and AI techniques. This portfolio is a demonstration of my passion for coding and innovation.</p>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>If you’re ready to innovate, let’s connect:</p>
-    <a href="mailto:mwirigialex351@gmail.com" class="contact-button">Email Me</a>
-  </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Here are some of the AI and machine learning projects I've worked on:</p>
+  <ul class="projects-list">
+    <li>
+      <a href="https://github.com/SCORPION/credit-card-approval" target="_blank">Credit Card Approval Prediction</a>
+      <p>Predicting credit card approval using Logistic Regression and data preprocessing techniques.</p>
+    </li>
+    <li>
+      <a href="https://github.com/SCORPION/energy-consumption" target="_blank">Energy Consumption Prediction</a>
+      <p>Predicting energy consumption using time-series analysis and machine learning models.</p>
+    </li>
+    <li>
+      <a href="https://github.com/SCORPION/insurance-charges-prediction" target="_blank">Insurance Charges Prediction</a>
+      <p>Predicting insurance charges based on client attributes using regression models.</p>
+    </li>
+    <li>
+      <a href="https://github.com/SCORPION/hotel-booking-cancellations" target="_blank">Hotel Booking Cancellations</a>
+      <p>Predicting hotel booking cancellations to help businesses optimize operations.</p>
+    </li>
+  </ul>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  <p>&copy; 2024 SCORPION | All Rights Reserved</p>
+  <p>Connect with me on <a href="https://www.linkedin.com/in/scorpion" target="_blank">LinkedIn</a></p>
+</footer>
+
 </body>
 </html>
